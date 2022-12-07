@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar CSS */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff97;
+}
+ /* Logo( Gator Sublease CSS */
+.logo{
+    width: 150px;
+    cursor: pointer;
+    
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10% 20px;
+    position: relative;
+    font-weight: bolder;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(images/The-Swamp.webp);
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    background-position-y: -310px;
+}
+
+.createbox{
+    width: 400px;
+    height: 680px;
+    background: #ffffffec;
+    color: rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-40%);
+    box-sizing: border-box;
+    padding: 80px 30px;
+}
+
+.avatar{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: -55px;
+    left: calc(50% - 60px);
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.createbox p{
+    margin: 0;
+    padding: 0px;
+    font-weight: bold;
+}
+
+.createbox input{
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+.createbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+.createbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: blue;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.createbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: #fa64009d;
+    color: rgba(0, 0, 0, 0.344);
+}
+
